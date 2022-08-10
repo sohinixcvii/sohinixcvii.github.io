@@ -24,7 +24,7 @@ medium_username: 'https://thiswonderfulcosmos.wordpress.com/blog/'
 
 # Build settings
 markdown: kramdown
-theme: phantom # Uncomment once published to RubyGems
+theme: phantom-master # Uncomment once published to RubyGems
 plugins:
   - jekyll-paginate-v2
 
