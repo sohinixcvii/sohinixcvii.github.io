@@ -83,7 +83,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #fff;
+		background: #30270E;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -98,8 +98,8 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #888;
-		font-family: "Lato", sans-serif;
+		color: #f4f4f4;
+		font-family: 'Baskerville', 'Georgia', serif;
 		font-size: 16pt;
 		font-weight: 400;
 		line-height: 1.75em;
@@ -117,11 +117,18 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #A098B5 !important;
+			color: #8F7C6B !important;
 		}
+	a h4 {
+		text-decoration: underline;
+	}
+	a:hover h4 {
+		border-bottom-color: transparent;
+		color: #8F7C6B !important;
+	}
 
 	strong, b {
-		color: #777;
+		color: #bbc0c9;
 		font-weight: 700;
 	}
 
@@ -133,8 +140,10 @@ input, select, textarea {
 		margin: 0 0 2.25em 0;
 	}
 
+	
+
 	h1, h2, h3, h4, h5, h6 {
-		color: #777;
+		color: #d3d3d3;
 		font-weight: 700;
 		line-height: 1em;
 		margin: 0 0 0.5625em 0;
@@ -1759,7 +1768,7 @@ input, select, textarea {
 	}
 
 	header p {
-		color: #aaa;
+		color: #5B472C;
 		position: relative;
 		margin: 0 0 1.6875em 0;
 	}
@@ -1785,12 +1794,12 @@ input, select, textarea {
 	}
 
 	header.major h2 {
-		color: #A098B5;
+		color: rgb(232, 229, 227);
 		font-size: 3.5em;
 	}
 
 		header.major h2 + p {
-			color: #777;
+			color: #5B472C;
 			font-size: 1.75em;
 			font-weight: 700;
 			margin-top: -0.75em;
@@ -1803,7 +1812,7 @@ input, select, textarea {
 	}
 
 	label {
-		color: #777;
+		color: #5B472C;
 		display: block;
 		font-size: 0.9em;
 		font-weight: 700;
@@ -1826,7 +1835,7 @@ input, select, textarea {
 		appearance: none;
 		border-radius: 5px;
 		border: none;
-		border: solid 2px #e4e4e4;
+		border: solid 2px #332917;
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -1848,7 +1857,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #A098B5;
+			border-color: #332917;
 		}
 
 	select {
@@ -1862,7 +1871,7 @@ input, select, textarea {
 	}
 
 		select option {
-			color: #777;
+			color: #30270E;
 			background: #fff;
 		}
 
@@ -1902,7 +1911,7 @@ input, select, textarea {
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
 			text-decoration: none;
-			color: #888;
+			color: #30270E;
 			cursor: pointer;
 			display: inline-block;
 			font-size: 1em;
@@ -1922,7 +1931,7 @@ input, select, textarea {
 				text-rendering: auto;
 				line-height: 1;
 				text-transform: none !important;
-				font-family: 'Font Awesome 5 Free';
+				font-family: 'Baskerville', 'Georgia', serif;
 				font-weight: 900;
 			}
 
@@ -1930,7 +1939,7 @@ input, select, textarea {
 			input[type="radio"] + label:before {
 				background: #fafafa;
 				border-radius: 5px;
-				border: solid 2px #e4e4e4;
+				border: solid 2px #30270E;
 				content: '';
 				display: inline-block;
 				font-size: 0.8em;
@@ -1992,7 +2001,7 @@ input, select, textarea {
 
 	.box {
 		border-radius: 5px;
-		border: solid 2px #e4e4e4;
+		border: solid 2px #332917;
 		margin-bottom: 2.25em;
 		padding: 1.5em;
 	}
@@ -2026,7 +2035,7 @@ input, select, textarea {
 			text-rendering: auto;
 			line-height: 1;
 			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
+			font-family: 'Baskerville', 'Georgia', serif;
 			font-weight: 400;
 		}
 
@@ -2043,7 +2052,7 @@ input, select, textarea {
 		}
 
 		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
+			font-family: 'Baskerville', 'Georgia', serif;
 		}
 
 /* Image */
@@ -2397,12 +2406,12 @@ input, select, textarea {
 				text-rendering: auto;
 				line-height: 1;
 				text-transform: none !important;
-				font-family: 'Font Awesome 5 Free';
+				font-family: 'Baskerville', 'Georgia', serif;
 				font-weight: 400;
 			}
 
 			ul.feature-icons li:before {
-				background: #A098B5;
+				background: #8F7C6B;
 				border-radius: 100%;
 				color: #ffffff;
 				display: block;
@@ -2419,21 +2428,25 @@ input, select, textarea {
 
 	ul.icons {
 		cursor: default;
+		color: #f4f4f4;
 		list-style: none;
 		padding-left: 0;
 	}
 
 		ul.icons li {
 			display: inline-block;
+			color: #f4f4f4;
 			padding: 0 1em 0 0;
 		}
 
 			ul.icons li:last-child {
 				padding-right: 0 !important;
+				color: #f4f4f4;
 			}
 
 			ul.icons li .icon:before {
 				font-size: 1.25em;
+				color: #f4f4f4;
 			}
 
 /* Table */
@@ -2449,7 +2462,7 @@ input, select, textarea {
 	}
 
 		table tbody tr {
-			border: solid 2px #f4f4f4;
+			border: solid 2px #332917;
 			border-left: 0;
 			border-right: 0;
 		}
@@ -2471,11 +2484,11 @@ input, select, textarea {
 		}
 
 		table thead {
-			border-bottom: solid 4px #e4e4e4;
+			border-bottom: solid 4px #332917;
 		}
 
 		table tfoot {
-			border-top: solid 4px #e4e4e4;
+			border-top: solid 4px #332917;
 		}
 
 		table.alt {
@@ -2483,7 +2496,7 @@ input, select, textarea {
 		}
 
 			table.alt tbody tr td {
-				border: solid 2px #e4e4e4;
+				border: solid 2px #332917;
 				border-left-width: 0;
 				border-top-width: 0;
 			}
@@ -2618,7 +2631,7 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #A098B5;
+			background-color: #8F7C6B;
 			color: #ffffff !important;
 		}
 
@@ -2626,14 +2639,14 @@ input, select, textarea {
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			.button.primary:hover {
-				background-color: #A098B5;
+				background-color: #8F7C6B;
 			}
 
 			input[type="submit"].primary:active,
 			input[type="reset"].primary:active,
 			input[type="button"].primary:active,
 			.button.primary:active {
-				background-color: #A098B5;
+				background-color: #8F7C6B;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2653,7 +2666,7 @@ input, select, textarea {
 /* Features */
 
 	.features article {
-		border-top: solid 3px #f4f4f4;
+		border-top: solid 3px #8F7C6B;
 		margin-bottom: 2.25em;
 		padding-top: 2.25em;
 	}
@@ -2700,8 +2713,8 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #A098B5;
-		color: #3f2f67;
+		background: #8F7C6B;
+		color: #979799;
 		height: 100%;
 		overflow-y: auto;
 		position: fixed;
@@ -2720,15 +2733,15 @@ input, select, textarea {
 			}
 
 		#header header p {
-			color: #3f2f67;
+			color: #f4f4f4;
 		}
 
 		#header a {
-			color: #3f2f67;
+			color: #f4f4f4;
 		}
 
 			#header a:hover {
-				color: #ffffff !important;
+				color: #5B472C !important;
 			}
 
 		#header > header {
@@ -2751,7 +2764,7 @@ input, select, textarea {
 			}
 
 			#header > header p {
-				color: #3f2f67;
+				color: #f4f4f4;
 				font-style: italic;
 				margin: 1em 0 0 0;
 			}
@@ -2772,7 +2785,7 @@ input, select, textarea {
 			}
 
 				#header > footer .icons li a {
-					color: #3f2f67;
+					color: #f4f4f4;
 				}
 
 		#header > nav {
@@ -2789,7 +2802,7 @@ input, select, textarea {
 			}
 
 				#header > nav ul li {
-					border-top: solid 2px #A098B5;
+					border-top: solid 2px #f4f4f4;
 					display: block;
 					padding: 0;
 				}
@@ -2807,8 +2820,8 @@ input, select, textarea {
 					}
 
 						#header > nav ul li a.active {
-							background: #fff;
-							color: #A098B5 !important;
+							background: #5B472C;
+							color: #f4f4f4 !important;
 						}
 
 					#header > nav ul li:first-child {
@@ -2818,14 +2831,14 @@ input, select, textarea {
 /* Wrapper */
 
 	#wrapper {
-		background: #fff;
+		background: #30270E;
 		padding-right: 23em;
 	}
 
 /* Main */
 
 	#main > section {
-		border-top: solid 6px #f4f4f4;
+		border-top: solid 6px #8F7C6B;
 	}
 
 		#main > section > .container {
@@ -2839,7 +2852,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		background: #fafafa;
+		background: #8F7C6B;
 		border-top: 0;
 		color: #c0c0c0;
 		overflow: hidden;
@@ -3071,12 +3084,12 @@ input, select, textarea {
 						text-rendering: auto;
 						line-height: 1;
 						text-transform: none !important;
-						font-family: 'Font Awesome 5 Free';
+						font-family: 'Baskerville', 'Georgia', serif;
 						font-weight: 900;
 					}
 
 					#titleBar .toggle:before {
-						background: #A098B5;
+						background: rgb(232, 229, 227);
 						color: #ffffff;
 						content: '\f0c9';
 						display: block;
