@@ -29,6 +29,12 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+@font-face {
+	font-family: Beth Ellen;
+	src: url('../webfonts/beth-ellen_normal_400.ttf') format('truetype');
+	font-size: 8px;
+	}
+
 body {
 	line-height: 1;
 }
@@ -200,6 +206,10 @@ input, select, textarea {
 
 		hr.major {
 			margin: 3.375em 0;
+		}
+
+		hr.major h2{
+			font-family: 'Beth Ellen', sans-serif;
 		}
 
 	blockquote {
