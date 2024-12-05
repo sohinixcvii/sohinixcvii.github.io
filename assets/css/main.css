@@ -89,7 +89,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #30270E;
+		background: #	;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -126,6 +126,10 @@ input, select, textarea {
 			color: #8F7C6B !important;
 		}
 	a h4 {
+		color: #eae9e9;
+		font-weight: 700;
+		line-height: 1em;
+		margin: 0 0 0.5625em 0;
 		text-decoration: underline;
 	}
 	a:hover h4 {
@@ -134,7 +138,7 @@ input, select, textarea {
 	}
 
 	strong, b {
-		color: #bbc0c9;
+		color: #a5a6a9;
 		font-weight: 700;
 	}
 
@@ -148,8 +152,8 @@ input, select, textarea {
 
 	
 
-	h1, h2, h3, h4, h5, h6 {
-		color: #d3d3d3;
+	h1, h2, h3, h5, h6 {
+		color: #bebebe;
 		font-weight: 700;
 		line-height: 1em;
 		margin: 0 0 0.5625em 0;
@@ -1845,7 +1849,7 @@ input, select, textarea {
 		appearance: none;
 		border-radius: 5px;
 		border: none;
-		border: solid 2px #332917;
+		border: solid 2px #f7f2e5;
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -1867,7 +1871,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #332917;
+			border-color: #f7f2e5;
 		}
 
 	select {
@@ -1881,7 +1885,7 @@ input, select, textarea {
 	}
 
 		select option {
-			color: #30270E;
+			color: #f7f2e5;
 			background: #fff;
 		}
 
@@ -1921,7 +1925,7 @@ input, select, textarea {
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
 			text-decoration: none;
-			color: #30270E;
+			color: #f7f2e5;
 			cursor: pointer;
 			display: inline-block;
 			font-size: 1em;
@@ -2472,7 +2476,7 @@ input, select, textarea {
 	}
 
 		table tbody tr {
-			border: solid 2px #332917;
+			border: solid 2px #f7f2e5;
 			border-left: 0;
 			border-right: 0;
 		}
