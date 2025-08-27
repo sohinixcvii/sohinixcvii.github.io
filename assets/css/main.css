@@ -1953,7 +1953,7 @@ input, select, textarea {
 			input[type="radio"] + label:before {
 				background: #fafafa;
 				border-radius: 5px;
-				border: solid 2px #30270E;
+				border: solid 2px #01161E;
 				content: '';
 				display: inline-block;
 				font-size: 0.8em;
@@ -2845,7 +2845,7 @@ input, select, textarea {
 /* Wrapper */
 
 	#wrapper {
-		background: #30270E;
+		background: #01161E;
 		padding-right: 23em;
 	}
 
