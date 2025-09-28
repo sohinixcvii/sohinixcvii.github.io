@@ -138,7 +138,7 @@ input, select, textarea {
 	}
 
 	strong, b {
-		color: #a5a6a9;
+		color: #5C0029;
 		font-weight: 700;
 	}
 
@@ -3341,3 +3341,221 @@ input, select, textarea {
 			}
 
 	}
+
+/* ================================
+   COSMO PALETTE (2025-09) — FINAL
+   ================================
+   --bg:         #FFF8F0
+   --heading:    #5C0029
+   --text:       #0D3B66
+   --hover:      #5C0029
+   --hoverText:  #FFF8F0
+   --lines:      #0D3B66
+   --sidebar:    #FFF8F0
+*/
+:root{
+	--bg:#FFFFFF;
+	--heading:#000000;
+	--text:#000000;
+	--hover:#5C0029;
+	--hoverText:#FFF8F0;
+	--lines:#000000;
+	--sidebar:#FFFFFF;
+  
+	--parchment-odd:#FFFFFF;
+	--parchment-even:#FFFFFF;
+	--focus-ring:#5C0029;
+	--selection-bg:#5C0029;
+  }
+  
+  /* Base backgrounds & typography */
+  html, body{background:var(--bg) !important;}
+  #wrapper{background:var(--bg) !important;}
+  body, input, select, textarea{color:var(--text) !important;}
+  h1, h2, h3, h4, h5, h6{color:var(--heading) !important;}
+  header p{color:var(--text) !important;}
+  
+  /* Links (site-wide) */
+  a{color:var(--text); border-bottom:1px solid var(--lines); text-decoration:none;}
+  a:hover{color:var(--hover) !important; border-bottom-color:transparent;}
+  a:visited{color:var(--text) !important;}
+  
+  /* Generic borders & rules */
+  hr{border:0; border-bottom:2px solid var(--lines) !important;}
+  ul.alt li{border-top:2px solid var(--lines) !important;}
+  .box{border:2px solid var(--lines) !important;}
+  
+  /* Forms */
+  input[type="text"], input[type="password"], input[type="email"],
+  select, textarea{
+	border:2px solid var(--lines) !important;
+	color:var(--text) !important;
+	background:#fff;
+  }
+  
+  /* Buttons */
+  .button, input[type="submit"], input[type="reset"], input[type="button"]{
+	background-color:var(--hover) !important;
+	color:var(--hoverText) !important;
+	border:2px solid var(--lines);
+  }
+  .button:hover,
+  input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover{
+	filter:brightness(1.05);
+  }
+  
+  /* ===========================
+	 SIDEBAR (header panel/right)
+	 =========================== */
+  #header{
+	background:var(--sidebar) !important;
+	color:var(--text) !important;
+	border-left:2px solid var(--lines);
+  }
+  
+  /* Sidebar text & links */
+  #header p,
+  #header a,
+  #header .icons a,
+  #header .contact a{
+	color:var(--text) !important;
+	border-color:var(--lines) !important;
+  }
+  #header a:hover{color:var(--hover) !important;}
+  
+  /* Sidebar headings */
+  #header h1, #header h2, #header h3, #header h4, #header h5, #header h6{
+	color:var(--heading) !important;
+  }
+  
+  /* -------- Sidebar Navigation -------- */
+  
+  /* Thinner dividers to match your mockup */
+  #header > nav ul{margin:0; padding:0; list-style:none;}
+  #header > nav ul li{
+	border-top:1px solid var(--lines) !important;   /* THINNER */
+  }
+  
+  /* Default link state: deep blue text, no background */
+  #header > nav ul li > a{
+	display:block;
+	background:transparent !important;
+	color:var(--text) !important;
+	border:0;
+	box-shadow:none !important;
+	text-decoration:none;
+	transition:background-color .15s ease, color .15s ease;
+  }
+  
+  /* Hover state: burgundy background + parchment text for link AND all descendants */
+  #header > nav ul li > a:hover,
+  #header > nav ul li > a:hover *{
+	background:var(--hover) !important;
+	color:var(--hoverText) !important;
+	border-color:transparent !important;
+  }
+  
+  /* Focus/Active press state mirrors hover (some themes use :active for click) */
+  #header > nav ul li > a:active,
+  #header > nav ul li > a:active *{
+	background:var(--hover) !important;
+	color:var(--hoverText) !important;
+  }
+  
+  /* Selected/Active page tab: burgundy background + parchment text for link AND descendants */
+  #header > nav ul li > a.active,
+  #header > nav ul li > a.active *,
+  #header > nav ul li.active > a,
+  #header > nav ul li.active > a *{
+	background:var(--hover) !important;
+	color:var(--hoverText) !important;
+  }
+  
+  /* Prevent visited link color from re-blueing descendants inside active/hovered items */
+  #header > nav ul li > a:visited,
+  #header > nav ul li > a:visited *{
+	color:inherit !important;
+  }
+  
+  /* Remove any theme-provided gradients/overlays */
+  #header > nav ul li > a::before,
+  #header > nav ul li > a::after{
+	background:none !important;
+	box-shadow:none !important;
+  }
+  /* -------- Sidebar active link text color fix -------- */
+#header > nav ul li > a.active,
+#header > nav ul li > a.active *,
+#header > nav ul li.active > a,
+#header > nav ul li.active > a * {
+  color: var(--hoverText) !important;  /* white/cream (#FAF0CA) */
+}
+
+  /* ===========================
+	 Main content section borders
+	 =========================== */
+  #main > section{border-top:6px solid var(--lines) !important;}
+  
+  /* Tables */
+  .table-wrapper{border-top:2px solid var(--lines); border-bottom:2px solid var(--lines);}
+  .table-wrapper table{width:100%; border-collapse:collapse;}
+  .table-wrapper table thead th{border-bottom:2px solid var(--lines); color:var(--heading);}
+  .table-wrapper table tbody tr{border-top:1px solid var(--lines);}
+  .table-wrapper table tbody tr:nth-child(odd){background:var(--parchment-odd);}
+  .table-wrapper table tbody tr:nth-child(even){background:var(--parchment-even);}
+  .table-wrapper table td, .table-wrapper table th{color:var(--text);}
+  
+  /* Selection & focus */
+  ::selection{background:var(--selection-bg); color:var(--hoverText);}
+  ::-moz-selection{background:var(--selection-bg); color:var(--hoverText);}
+  a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible,
+  textarea:focus-visible, [tabindex]:focus-visible{
+	outline:3px solid var(--focus-ring);
+	outline-offset:2px;
+	box-shadow:0 0 0 3px rgba(92,0,41,0.25);
+	border-radius:2px;
+  }
+  /* -------- Footer: slim maroon bar with white text -------- */
+#footer {
+	background: var(--heading) !important;   /* #5C0029 */
+	color: #fff !important;
+	padding: 0.5rem 0 !important;            /* thinner */
+	border-top: 1px solid rgba(255,255,255,0.25);
+	font-size: 0.95rem;                      /* slightly smaller */
+  }
+  
+  #footer .container { padding: 0 1rem !important; }
+  
+  #footer a {
+	color: #fff !important;
+	border-bottom: 1px solid rgba(255,255,255,0.6) !important;
+  }
+  #footer a:hover {
+	color: #FAF0CA !important;               /* optional: warm cream on hover */
+	border-bottom-color: transparent !important;
+  }
+  
+  /* Tighter copyright list */
+  #footer ul.copyright {
+	margin: 0;
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+	justify-content: center;
+  }
+  #footer ul.copyright li { color: #fff; }  
+  
+  /* Code & quotes */
+  code{background:rgba(13,59,102,0.08); color:var(--text);}
+  blockquote{border-left:8px solid var(--lines) !important; color:var(--text);}
+
+  /* -------- Page transitions (soft fade) -------- */
+body.fade-ready { transition: opacity 1500ms ease; }
+body.fade-in    { opacity: 1; }
+body.fade-out   { opacity: 0; }
+body:not(.fade-ready) { opacity: 0; } /* initial state before DOMContentLoaded */
+
+@media (prefers-reduced-motion: reduce) {
+  body.fade-ready { transition: none; }
+  body:not(.fade-ready) { opacity: 1; }
+}
