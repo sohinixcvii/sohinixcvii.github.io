@@ -89,7 +89,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #	;
+		background: #ffffff;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3550,7 +3550,7 @@ input, select, textarea {
   blockquote{border-left:8px solid var(--lines) !important; color:var(--text);}
 
   /* -------- Page transitions (soft fade) -------- */
-body.fade-ready { transition: opacity 1500ms ease; }
+body.fade-ready { transition: opacity 300ms ease; }
 body.fade-in    { opacity: 1; }
 body.fade-out   { opacity: 0; }
 body:not(.fade-ready) { opacity: 0; } /* initial state before DOMContentLoaded */
