@@ -1,7 +1,7 @@
 // Soft cross-page fades (respect reduced-motion)
 (function () {
   const RMQ = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const duration = RMQ.matches ? 0 : 1500; // ms
+  const duration = RMQ.matches ? 0 : 300; // ms
 
   // Fade-in on load
   document.addEventListener('DOMContentLoaded', () => {
@@ -13,7 +13,7 @@
   function isInternalLink(a) {
     try {
       const url = new URL(a.href, location.href);
-      return url.origin === location.origin && !url.hash && !a.hasAttribute('target');
+      return url.origin === location.origin && !url.hash && !a.hasAttribute('target') && !a.hasAttribute('download');
     } catch { return false; }
   }
 
