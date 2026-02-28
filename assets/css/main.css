@@ -89,7 +89,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #ffffff;
+		background: #FAF3DD;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -104,7 +104,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #f4f4f4;
+		color: #5E6472;
 		font-family: 'Baskerville', 'Georgia', serif;
 		font-size: 16pt;
 		font-weight: 400;
@@ -123,10 +123,10 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #8F7C6B !important;
+			color: #FFA69E !important;
 		}
 	a h4 {
-		color: #eae9e9;
+		color: #5E6472;
 		font-weight: 700;
 		line-height: 1em;
 		margin: 0 0 0.5625em 0;
@@ -134,11 +134,11 @@ input, select, textarea {
 	}
 	a:hover h4 {
 		border-bottom-color: transparent;
-		color: #8F7C6B !important;
+		color: #FFA69E !important;
 	}
 
 	strong, b {
-		color: #5C0029;
+		color: #5E6472;
 		font-weight: 700;
 	}
 
@@ -152,8 +152,8 @@ input, select, textarea {
 
 	
 
-	h1, h2, h3, h5, h6 {
-		color: #bebebe;
+	h1, h2, h3, h4, h5, h6 {
+		color: #5E6472;
 		font-weight: 700;
 		line-height: 1em;
 		margin: 0 0 0.5625em 0;
@@ -204,7 +204,7 @@ input, select, textarea {
 
 	hr {
 		border: 0;
-		border-bottom: solid 2px #f4f4f4;
+		border-bottom: solid 2px #FFA69E;
 		margin: 2.25em 0;
 	}
 
@@ -1782,7 +1782,7 @@ input, select, textarea {
 	}
 
 	header p {
-		color: #5B472C;
+		color: #5E6472;
 		position: relative;
 		margin: 0 0 1.6875em 0;
 	}
@@ -1808,12 +1808,12 @@ input, select, textarea {
 	}
 
 	header.major h2 {
-		color: rgb(232, 229, 227);
+		color: #5E6472;
 		font-size: 3.5em;
 	}
 
 		header.major h2 + p {
-			color: #5B472C;
+			color: #5E6472;
 			font-size: 1.75em;
 			font-weight: 700;
 			margin-top: -0.75em;
@@ -1826,7 +1826,7 @@ input, select, textarea {
 	}
 
 	label {
-		color: #5B472C;
+		color: #5E6472;
 		display: block;
 		font-size: 0.9em;
 		font-weight: 700;
@@ -1953,7 +1953,7 @@ input, select, textarea {
 			input[type="radio"] + label:before {
 				background: #fafafa;
 				border-radius: 5px;
-				border: solid 2px #01161E;
+				border: solid 2px #FFA69E;
 				content: '';
 				display: inline-block;
 				font-size: 0.8em;
@@ -2259,7 +2259,7 @@ input, select, textarea {
 		}
 
 			ul.alt li {
-				border-top: solid 2px #f4f4f4;
+				border-top: solid 2px #FFA69E;
 				padding: 0.5em 0;
 			}
 
@@ -2425,7 +2425,7 @@ input, select, textarea {
 			}
 
 			ul.feature-icons li:before {
-				background: #8F7C6B;
+				background: #FFA69E;
 				border-radius: 100%;
 				color: #ffffff;
 				display: block;
@@ -2442,25 +2442,25 @@ input, select, textarea {
 
 	ul.icons {
 		cursor: default;
-		color: #f4f4f4;
+		color: #5E6472;
 		list-style: none;
 		padding-left: 0;
 	}
 
 		ul.icons li {
 			display: inline-block;
-			color: #f4f4f4;
+			color: #5E6472;
 			padding: 0 1em 0 0;
 		}
 
 			ul.icons li:last-child {
 				padding-right: 0 !important;
-				color: #f4f4f4;
+				color: #5E6472;
 			}
 
 			ul.icons li .icon:before {
 				font-size: 1.25em;
-				color: #f4f4f4;
+				color: #5E6472;
 			}
 
 /* Table */
@@ -2623,8 +2623,8 @@ input, select, textarea {
 			input[type="reset"].alt:hover,
 			input[type="button"].alt:hover,
 			.button.alt:hover {
-				background-color: #f4f4f4;
-				color: #777 !important;
+				background-color: #FFA69E;
+				color: #5E6472 !important;
 			}
 
 			input[type="submit"].alt:active,
@@ -2645,22 +2645,22 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #8F7C6B;
-			color: #ffffff !important;
+			background-color: #FFA69E;
+			color: #5E6472 !important;
 		}
 
 			input[type="submit"].primary:hover,
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			.button.primary:hover {
-				background-color: #8F7C6B;
+				background-color: #FFA69E;
 			}
 
 			input[type="submit"].primary:active,
 			input[type="reset"].primary:active,
 			input[type="button"].primary:active,
 			.button.primary:active {
-				background-color: #8F7C6B;
+				background-color: #FFA69E;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2680,7 +2680,7 @@ input, select, textarea {
 /* Features */
 
 	.features article {
-		border-top: solid 3px #8F7C6B;
+		border-top: solid 3px #FFA69E;
 		margin-bottom: 2.25em;
 		padding-top: 2.25em;
 	}
@@ -2727,8 +2727,8 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #8F7C6B;
-		color: #979799;
+		background: #FAF3DD;
+		color: #5E6472;
 		height: 100%;
 		overflow-y: auto;
 		position: fixed;
@@ -2739,23 +2739,23 @@ input, select, textarea {
 	}
 
 		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
-			color: #ffffff;
+			color: #5E6472;
 		}
 
 			#header h1 a, #header h2 a, #header h3 a, #header h4 a, #header h5 a, #header h6 a {
-				color: #ffffff;
+				color: #5E6472;
 			}
 
 		#header header p {
-			color: #f4f4f4;
+			color: #5E6472;
 		}
 
 		#header a {
-			color: #f4f4f4;
+			color: #5E6472;
 		}
 
 			#header a:hover {
-				color: #5B472C !important;
+				color: #FFA69E !important;
 			}
 
 		#header > header {
@@ -2778,7 +2778,7 @@ input, select, textarea {
 			}
 
 			#header > header p {
-				color: #f4f4f4;
+				color: #5E6472;
 				font-style: italic;
 				margin: 1em 0 0 0;
 			}
@@ -2799,7 +2799,7 @@ input, select, textarea {
 			}
 
 				#header > footer .icons li a {
-					color: #f4f4f4;
+					color: #5E6472;
 				}
 
 		#header > nav {
@@ -2816,7 +2816,7 @@ input, select, textarea {
 			}
 
 				#header > nav ul li {
-					border-top: solid 2px #f4f4f4;
+					border-top: solid 1px #FFA69E;
 					display: block;
 					padding: 0;
 				}
@@ -2827,15 +2827,15 @@ input, select, textarea {
 						-ms-transition: none;
 						transition: none;
 						border: 0;
-						color: #ffffff !important;
+						color: #5E6472 !important;
 						display: block;
 						padding: 0.85em 0;
 						text-decoration: none;
 					}
 
 						#header > nav ul li a.active {
-							background: #5B472C;
-							color: #f4f4f4 !important;
+							background: #FFA69E;
+							color: #5E6472 !important;
 						}
 
 					#header > nav ul li:first-child {
@@ -2845,14 +2845,14 @@ input, select, textarea {
 /* Wrapper */
 
 	#wrapper {
-		background: #01161E;
+		background: #FAF3DD;
 		padding-right: 23em;
 	}
 
 /* Main */
 
 	#main > section {
-		border-top: solid 6px #8F7C6B;
+		border-top: solid 6px #FFA69E;
 	}
 
 		#main > section > .container {
@@ -2866,9 +2866,9 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		background: #8F7C6B;
+		background: #5E6472;
 		border-top: 0;
-		color: #c0c0c0;
+		color: #FAF3DD;
 		overflow: hidden;
 		padding: 4em 0 2em 0;
 	}
@@ -2880,7 +2880,7 @@ input, select, textarea {
 		}
 
 			#footer .copyright li {
-				border-left: solid 1px #d4d4d4;
+				border-left: solid 1px rgba(250,243,221,0.3);
 				display: inline-block;
 				font-size: 0.8em;
 				margin-left: 1em;
@@ -3057,13 +3057,13 @@ input, select, textarea {
 				top: 0;
 				width: 100%;
 				z-index: 10001;
-				background: #222;
-				color: #fff;
+				background: #FAF3DD;
+				color: #5E6472;
 				min-width: 320px;
 			}
 
 				#titleBar .title {
-					color: #fff;
+					color: #5E6472;
 					display: block;
 					font-weight: 700;
 					height: 44px;
@@ -3103,8 +3103,8 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
-						background: rgb(232, 229, 227);
-						color: #ffffff;
+						background: #FFA69E;
+						color: #5E6472;
 						content: '\f0c9';
 						display: block;
 						font-size: 18px;
@@ -3343,30 +3343,30 @@ input, select, textarea {
 	}
 
 /* ================================
-   COSMO PALETTE (2025-09) — FINAL
+   PALETTE
    ================================
-   --bg:         #FFF8F0
-   --heading:    #5C0029
-   --text:       #0D3B66
-   --hover:      #5C0029
-   --hoverText:  #FFF8F0
-   --lines:      #0D3B66
-   --sidebar:    #FFF8F0
+   --bg:         #FAF3DD  (warm cream background)
+   --heading:    #5E6472  (slate blue-grey — header text)
+   --text:       #5E6472  (same slate for body text)
+   --hover:      #FFA69E  (salmon coral — accents, active states)
+   --hoverText:  #5E6472  (dark text on salmon)
+   --lines:      #FFA69E  (salmon coral — dividers / borders)
+   --sidebar:    #FAF3DD  (warm cream — sidebar panel)
 */
-:root{
-	--bg:#FFFFFF;
-	--heading:#000000;
-	--text:#000000;
-	--hover:#5C0029;
-	--hoverText:#FFF8F0;
-	--lines:#000000;
-	--sidebar:#FFFFFF;
-  
-	--parchment-odd:#FFFFFF;
-	--parchment-even:#FFFFFF;
-	--focus-ring:#5C0029;
-	--selection-bg:#5C0029;
-  }
+:root {
+	--bg:             #FAF3DD;
+	--heading:        #5E6472;
+	--text:           #5E6472;
+	--hover:          #FFA69E;
+	--hoverText:      #5E6472;
+	--lines:          #FFA69E;
+	--sidebar:        #FAF3DD;
+
+	--parchment-odd:  #FAF3DD;
+	--parchment-even: #B8F2E6;
+	--focus-ring:     #FFA69E;
+	--selection-bg:   #FFA69E;
+}
   
   /* Base backgrounds & typography */
   html, body{background:var(--bg) !important;}
@@ -3488,7 +3488,7 @@ input, select, textarea {
 #header > nav ul li > a.active *,
 #header > nav ul li.active > a,
 #header > nav ul li.active > a * {
-  color: var(--hoverText) !important;  /* white/cream (#FAF0CA) */
+  color: var(--hoverText) !important;
 }
 
   /* ===========================
@@ -3512,26 +3512,26 @@ input, select, textarea {
   textarea:focus-visible, [tabindex]:focus-visible{
 	outline:3px solid var(--focus-ring);
 	outline-offset:2px;
-	box-shadow:0 0 0 3px rgba(92,0,41,0.25);
+	box-shadow:0 0 0 3px rgba(255,166,158,0.35);
 	border-radius:2px;
   }
-  /* -------- Footer: slim maroon bar with white text -------- */
+  /* -------- Footer -------- */
 #footer {
-	background: var(--heading) !important;   /* #5C0029 */
-	color: #fff !important;
-	padding: 0.5rem 0 !important;            /* thinner */
-	border-top: 1px solid rgba(255,255,255,0.25);
-	font-size: 0.95rem;                      /* slightly smaller */
+	background: var(--heading) !important;
+	color: var(--bg) !important;
+	padding: 0.5rem 0 !important;
+	border-top: 1px solid rgba(94,100,114,0.2);
+	font-size: 0.95rem;
   }
   
   #footer .container { padding: 0 1rem !important; }
   
   #footer a {
-	color: #fff !important;
-	border-bottom: 1px solid rgba(255,255,255,0.6) !important;
+	color: var(--bg) !important;
+	border-bottom: 1px solid rgba(250,243,221,0.5) !important;
   }
   #footer a:hover {
-	color: #FAF0CA !important;               /* optional: warm cream on hover */
+	color: var(--hover) !important;
 	border-bottom-color: transparent !important;
   }
   
@@ -3543,13 +3543,39 @@ input, select, textarea {
 	flex-wrap: wrap;
 	justify-content: center;
   }
-  #footer ul.copyright li { color: #fff; }  
+  #footer ul.copyright li { color: var(--bg); }  
   
   /* Code & quotes */
-  code{background:rgba(13,59,102,0.08); color:var(--text);}
+  code{background:rgba(174,217,224,0.2); color:var(--text);}
   blockquote{border-left:8px solid var(--lines) !important; color:var(--text);}
 
-  /* -------- Page transitions (soft fade) -------- */
+  /* -------- Additional palette overrides -------- */
+  /* Bold text */
+  strong, b { color: var(--heading) !important; }
+
+  /* Heading links */
+  a h4 { color: var(--heading) !important; }
+  a:hover h4, a:hover h4 * { color: var(--hover) !important; }
+
+  /* Form labels */
+  label { color: var(--heading) !important; }
+
+  /* Major header sub-line */
+  header.major h2 + p { color: var(--text) !important; }
+
+  /* Mobile title bar */
+  #titleBar { background: var(--sidebar) !important; color: var(--heading) !important; }
+  #titleBar .title { color: var(--heading) !important; }
+  #titleBar .toggle:before { background: var(--hover) !important; color: var(--heading) !important; }
+
+  /* Feature-icon circles */
+  ul.feature-icons li:before { background: var(--hover) !important; color: var(--bg) !important; }
+
+  /* Sidebar icon links (LinkedIn, Github) */
+  #header ul.icons li a,
+  #header ul.icons li a:visited { color: var(--text) !important; }
+
+    /* -------- Page transitions (soft fade) -------- */
 body.fade-ready { transition: opacity 300ms ease; }
 body.fade-in    { opacity: 1; }
 body.fade-out   { opacity: 0; }
