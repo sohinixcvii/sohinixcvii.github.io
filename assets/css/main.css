@@ -3427,6 +3427,9 @@ input, select, textarea {
   #header h1, #header h2, #header h3, #header h4, #header h5, #header h6{
 	color:var(--heading) !important;
   }
+
+  /* Site title "Sohini Dutta" — accent colour */
+  #logo { color: var(--hover) !important; }
   
   /* -------- Sidebar Navigation -------- */
   
@@ -3585,3 +3588,760 @@ body:not(.fade-ready) { opacity: 0; } /* initial state before DOMContentLoaded *
   body.fade-ready { transition: none; }
   body:not(.fade-ready) { opacity: 1; }
 }
+
+/* ==========================================================
+   Bitacora-inspired dark redesign
+   Original styling written to evoke the Bitacora Orka Black mood
+   while keeping the existing site content and page structure.
+   ========================================================== */
+
+:root {
+  --bit-bg: #211b1a;
+  --bit-panel: #28211f;
+  --bit-text: #cfc7c1;
+  --bit-muted: #968c86;
+  --bit-heading: #ddd6d1;
+  --bit-line: #7a716c;
+  --bit-link: #e3ded9;
+  --bit-link-hover: #ffffff;
+  --bit-accent: #b9aea7;
+}
+
+html,
+body {
+  background: var(--bit-bg) !important;
+  color: var(--bit-text) !important;
+  font-family: Georgia, 'Times New Roman', Times, serif !important;
+  font-size: 18px;
+  line-height: 1.85;
+}
+
+body {
+  letter-spacing: 0;
+}
+
+body:before,
+#titleBar {
+  display: none !important;
+}
+
+/* Convert the old fixed sidebar into a centered masthead */
+#header {
+  position: relative !important;
+  width: min(920px, calc(100% - 3rem)) !important;
+  height: auto !important;
+  min-height: 0 !important;
+  left: auto !important;
+  top: auto !important;
+  margin: 0 auto !important;
+  padding: 5.5rem 0 3.25rem !important;
+  background: transparent !important;
+  text-align: center !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+#header:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 7.1rem;
+  left: 0;
+  width: 24%;
+  height: 1px;
+  background: var(--bit-line);
+  opacity: 0.75;
+}
+
+#header:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 7.1rem;
+  right: 0;
+  width: 24%;
+  height: 1px;
+  background: var(--bit-line);
+  opacity: 0.75;
+}
+
+#header header {
+  margin: 0 auto !important;
+  padding: 0 !important;
+  width: min(520px, 100%) !important;
+}
+
+#header .image.avatar {
+  display: none !important;
+}
+
+#header #logo,
+#header h1,
+#header h2 {
+  margin: 0 !important;
+  color: var(--bit-heading) !important;
+  font-family: Georgia, 'Times New Roman', Times, serif !important;
+  font-size: clamp(1.65rem, 3vw, 2.35rem) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.42em !important;
+  line-height: 1.15 !important;
+  text-transform: uppercase !important;
+  text-shadow: none !important;
+}
+
+#header header p {
+  margin: 0.85rem auto 0 !important;
+  color: var(--bit-muted) !important;
+  font-size: 0.78rem !important;
+  line-height: 1.8 !important;
+  font-style: italic;
+  max-width: 34rem;
+}
+
+#header a {
+  color: var(--bit-link) !important;
+  border-bottom: 1px solid rgba(227, 222, 217, 0.55) !important;
+  text-decoration: none !important;
+}
+
+#header a:hover {
+  color: var(--bit-link-hover) !important;
+  border-bottom-color: var(--bit-link-hover) !important;
+}
+
+#nav {
+  margin: 3rem auto 0 !important;
+  padding: 1.05rem 0 !important;
+  border-top: 1px solid rgba(122, 113, 108, 0.45) !important;
+  border-bottom: 1px solid rgba(122, 113, 108, 0.45) !important;
+}
+
+#nav ul {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 0.55rem 1.45rem !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#nav ul li {
+  display: inline-block !important;
+  border: 0 !important;
+  padding: 0 !important;
+}
+
+#nav ul li a {
+  display: inline-block !important;
+  padding: 0 !important;
+  border: 0 !important;
+  color: var(--bit-muted) !important;
+  font-family: Georgia, 'Times New Roman', Times, serif !important;
+  font-size: 0.78rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.2em !important;
+  line-height: 1.6 !important;
+  text-transform: uppercase !important;
+}
+
+#nav ul li a.active,
+#nav ul li a:hover {
+  color: var(--bit-heading) !important;
+  background: transparent !important;
+}
+
+#header footer {
+  margin-top: 1.4rem !important;
+  padding: 0 !important;
+}
+
+#header ul.icons {
+  margin: 0 !important;
+}
+
+#header ul.icons li a {
+  color: var(--bit-muted) !important;
+  border: 0 !important;
+  font-size: 0.78rem !important;
+  font-style: italic;
+}
+
+/* Main layout */
+#wrapper {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  background: transparent !important;
+}
+
+#main {
+  background: transparent !important;
+}
+
+#main > section {
+  border: 0 !important;
+  background: transparent !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+#main > section + section {
+  margin-top: 4.5rem !important;
+}
+
+.container {
+  width: min(920px, calc(100% - 3rem)) !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+#main > section > .container {
+  padding: 0 !important;
+}
+
+/* Hero image becomes a quiet journal-like banner */
+.image.main {
+  width: min(920px, calc(100% - 3rem)) !important;
+  height: clamp(230px, 34vw, 430px) !important;
+  margin: 0 auto 4rem !important;
+  border: 1px solid rgba(122, 113, 108, 0.35) !important;
+  overflow: hidden !important;
+  opacity: 0.82;
+  filter: grayscale(18%) sepia(18%) brightness(0.72) contrast(1.05);
+}
+
+.image.main img {
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6,
+header.major h2,
+header.major h3 {
+  color: var(--bit-heading) !important;
+  font-family: Georgia, 'Times New Roman', Times, serif !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.18em !important;
+  line-height: 1.35 !important;
+  text-transform: uppercase !important;
+}
+
+h3,
+header.major h3 {
+  margin: 0 0 1.75rem !important;
+  font-size: 0.95rem !important;
+}
+
+h4 {
+  font-size: 0.9rem !important;
+}
+
+p,
+li,
+dl,
+table,
+blockquote {
+  color: var(--bit-text) !important;
+  font-family: Georgia, 'Times New Roman', Times, serif !important;
+}
+
+p {
+  margin: 0 0 1.65rem !important;
+}
+
+ul,
+ol {
+  margin: 0 0 1.75rem 1.15rem !important;
+}
+
+li {
+  padding-left: 0.35rem !important;
+  margin: 0.3rem 0 !important;
+}
+
+strong,
+b {
+  color: var(--bit-heading) !important;
+}
+
+a,
+a:visited {
+  color: var(--bit-link) !important;
+  border-bottom: 1px solid rgba(227, 222, 217, 0.55) !important;
+  text-decoration: none !important;
+  transition: color 180ms ease, border-color 180ms ease, opacity 180ms ease;
+}
+
+a:hover {
+  color: var(--bit-link-hover) !important;
+  border-bottom-color: var(--bit-link-hover) !important;
+}
+
+/* Give sections the spaced, editorial rhythm of a diary theme */
+#main > section:not(:first-child) .container {
+  border-top: 1px solid rgba(122, 113, 108, 0.32);
+  padding-top: 3.2rem !important;
+}
+
+header.major:after {
+  display: none !important;
+}
+
+/* Lists, cards, boxes from the original template */
+.features article,
+.box,
+section.special,
+.table-wrapper,
+pre,
+code {
+  background: var(--bit-panel) !important;
+  border: 1px solid rgba(122, 113, 108, 0.38) !important;
+  color: var(--bit-text) !important;
+}
+
+.features article {
+  padding: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.features article .image {
+  border: 1px solid rgba(122, 113, 108, 0.35) !important;
+  filter: grayscale(10%) sepia(16%) brightness(0.78);
+}
+
+table th,
+table td {
+  color: var(--bit-text) !important;
+  border-color: rgba(122, 113, 108, 0.35) !important;
+}
+
+hr {
+  border: 0 !important;
+  border-top: 1px solid rgba(122, 113, 108, 0.45) !important;
+}
+
+/* Footer */
+#footer {
+  margin: 5rem auto 0 !important;
+  padding: 3rem 0 4rem !important;
+  background: transparent !important;
+  border-top: 1px solid rgba(122, 113, 108, 0.45) !important;
+}
+
+#footer .container {
+  width: min(920px, calc(100% - 3rem)) !important;
+}
+
+#footer,
+#footer li,
+#footer a {
+  color: var(--bit-muted) !important;
+  font-size: 0.82rem !important;
+}
+
+/* Forms/buttons if added later */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+  background: transparent !important;
+  color: var(--bit-heading) !important;
+  border: 1px solid var(--bit-line) !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  font-family: Georgia, 'Times New Roman', Times, serif !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase !important;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+button:hover,
+.button:hover {
+  background: rgba(227, 222, 217, 0.08) !important;
+}
+
+@media screen and (max-width: 736px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+
+  #header {
+    width: calc(100% - 2rem) !important;
+    padding: 3.25rem 0 2.25rem !important;
+  }
+
+  #header:before,
+  #header:after {
+    display: none !important;
+  }
+
+  #header #logo,
+  #header h1,
+  #header h2 {
+    font-size: 1.55rem !important;
+    letter-spacing: 0.24em !important;
+  }
+
+  #nav {
+    margin-top: 2rem !important;
+  }
+
+  #nav ul {
+    gap: 0.45rem 0.85rem !important;
+  }
+
+  #nav ul li a {
+    font-size: 0.7rem !important;
+    letter-spacing: 0.14em !important;
+  }
+
+  .container,
+  .image.main,
+  #footer .container {
+    width: calc(100% - 2rem) !important;
+  }
+
+  #main > section + section {
+    margin-top: 3.25rem !important;
+  }
+
+  #main > section:not(:first-child) .container {
+    padding-top: 2.4rem !important;
+  }
+}
+
+/* ==========================================================
+   Update: remove banner image and use a proper Bitacora-style
+   profile/about/social sidebar.
+   ========================================================== */
+
+.image.main {
+  display: none !important;
+}
+
+/* Page frame: content column + right sidebar */
+body {
+  min-height: 100vh;
+}
+
+#wrapper {
+  width: min(1120px, calc(100% - 3rem)) !important;
+  margin: 0 auto !important;
+  padding: 6.25rem 22rem 4rem 0 !important;
+}
+
+#main > section:first-child .container {
+  border-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.container {
+  width: min(680px, 100%) !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+/* Sidebar */
+#header {
+  position: fixed !important;
+  top: 6.25rem !important;
+  left: auto !important;
+  right: max(1.5rem, calc((100vw - 1120px) / 2)) !important;
+  width: 18rem !important;
+  max-height: calc(100vh - 8rem) !important;
+  overflow-y: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  text-align: left !important;
+  box-shadow: none !important;
+}
+
+#header:before,
+#header:after {
+  display: none !important;
+}
+
+#header header {
+  width: 100% !important;
+  margin: 0 0 2.75rem !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
+
+#header .image.avatar {
+  display: block !important;
+  width: 8.5rem !important;
+  height: 8.5rem !important;
+  margin: 0 0 1.55rem !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  border: 1px solid rgba(122, 113, 108, 0.45) !important;
+  opacity: 0.94;
+}
+
+#header .image.avatar img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+#header #logo,
+#header h1,
+#header h2 {
+  font-size: 0.95rem !important;
+  letter-spacing: 0.24em !important;
+  line-height: 1.55 !important;
+  margin: 0 0 1.15rem !important;
+}
+
+#header .sidebar-about {
+  color: var(--bit-text) !important;
+  font-size: 0.86rem !important;
+  line-height: 1.75 !important;
+  font-style: normal !important;
+  margin: 0 !important;
+}
+
+#header .sidebar-about strong {
+  display: block;
+  margin: 0 0 0.55rem;
+  color: var(--bit-heading) !important;
+  font-size: 0.74rem !important;
+  letter-spacing: 0.28em !important;
+  text-transform: uppercase !important;
+}
+
+#nav {
+  margin: 0 0 2.4rem !important;
+  padding: 0 !important;
+  border-top: 1px solid rgba(122, 113, 108, 0.38) !important;
+  border-bottom: 1px solid rgba(122, 113, 108, 0.38) !important;
+}
+
+#nav ul {
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#nav ul li {
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-bottom: 1px solid rgba(122, 113, 108, 0.22) !important;
+}
+
+#nav ul li:last-child {
+  border-bottom: 0 !important;
+}
+
+#nav ul li a {
+  display: block !important;
+  padding: 0.72rem 0 !important;
+  font-size: 0.68rem !important;
+  letter-spacing: 0.22em !important;
+}
+
+#header footer {
+  margin: 0 !important;
+}
+
+#header .sidebar-socials {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 0.65rem !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#header .sidebar-socials li {
+  display: inline-block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#header .sidebar-socials a {
+  display: inline-block !important;
+  padding: 0.25rem 0 !important;
+  color: var(--bit-link) !important;
+  border-bottom: 1px solid rgba(227, 222, 217, 0.55) !important;
+  font-size: 0.78rem !important;
+  font-style: italic !important;
+}
+
+#footer .container {
+  width: min(680px, 100%) !important;
+}
+
+@media screen and (max-width: 980px) {
+  #wrapper {
+    width: min(760px, calc(100% - 2rem)) !important;
+    padding: 2.5rem 0 3rem !important;
+  }
+
+  #header {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    width: min(760px, calc(100% - 2rem)) !important;
+    max-height: none !important;
+    margin: 0 auto 3rem !important;
+    padding: 3rem 0 0 !important;
+  }
+
+  #header header,
+  #header #logo,
+  #header .sidebar-about {
+    text-align: center !important;
+  }
+
+  #header .image.avatar {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  #nav ul {
+    text-align: center !important;
+  }
+
+  #header .sidebar-socials {
+    justify-content: center !important;
+  }
+
+  .container,
+  #footer .container {
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* ==========================================================
+   Bitacora-inspired light colour scheme
+   Added after the dark/sidebar styling so it cleanly overrides colours only.
+   ========================================================== */
+
+:root {
+  --bit-bg: #f3f1ea;
+  --bit-panel: #eee9dd;
+  --bit-text: #004d59;
+  --bit-muted: #00788a;
+  --bit-heading: #004d59;
+  --bit-line: #2c8a94;
+  --bit-link: #8a6832;
+  --bit-link-hover: #004d59;
+  --bit-accent: #0f6f7a;
+}
+
+html,
+body,
+#wrapper,
+#main,
+#main > section,
+#header,
+#footer {
+  background: var(--bit-bg) !important;
+}
+
+body,
+p,
+li,
+dl,
+table,
+blockquote,
+#header .sidebar-about,
+#header header p {
+  color: var(--bit-text) !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+header.major h2,
+header.major h3,
+#header #logo,
+#header h1,
+#header h2,
+strong,
+b {
+  color: var(--bit-heading) !important;
+}
+
+#header .sidebar-about strong,
+#nav ul li a,
+#footer,
+#footer li {
+  color: var(--bit-heading) !important;
+}
+
+#header:before,
+#header:after {
+  background: var(--bit-line) !important;
+}
+
+#nav,
+#nav ul li,
+#main > section:not(:first-child) .container,
+#footer,
+hr,
+.features article,
+.box,
+section.special,
+.table-wrapper,
+pre,
+code,
+#header .image.avatar {
+  border-color: rgba(44, 138, 148, 0.45) !important;
+}
+
+.features article,
+.box,
+section.special,
+.table-wrapper,
+pre,
+code {
+  background: var(--bit-panel) !important;
+}
+
+a,
+a:visited,
+#header a,
+#header .sidebar-socials a,
+#footer a {
+  color: var(--bit-link) !important;
+  border-bottom-color: rgba(138, 104, 50, 0.65) !important;
+}
+
+a:hover,
+#header a:hover,
+#header .sidebar-socials a:hover,
+#footer a:hover,
+#nav ul li a.active,
+#nav ul li a:hover {
+  color: var(--bit-link-hover) !important;
+  border-bottom-color: var(--bit-link-hover) !important;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+  color: var(--bit-heading) !important;
+  border-color: var(--bit-line) !important;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+button:hover,
+.button:hover {
+  background: rgba(44, 138, 148, 0.10) !important;
+}
+
+::selection { background: rgba(44, 138, 148, 0.22) !important; color: var(--bit-heading) !important; }
+::-moz-selection { background: rgba(44, 138, 148, 0.22) !important; color: var(--bit-heading) !important; }
