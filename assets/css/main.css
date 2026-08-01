@@ -4179,48 +4179,6 @@ body {
   width: min(680px, 100%) !important;
 }
 
-@media screen and (max-width: 980px) {
-  #wrapper {
-    width: min(760px, calc(100% - 2rem)) !important;
-    padding: 2.5rem 0 3rem !important;
-  }
-
-  #header {
-    position: relative !important;
-    top: auto !important;
-    right: auto !important;
-    width: min(760px, calc(100% - 2rem)) !important;
-    max-height: none !important;
-    margin: 0 auto 3rem !important;
-    padding: 3rem 0 0 !important;
-  }
-
-  #header header,
-  #header #logo,
-  #header .sidebar-about {
-    text-align: center !important;
-  }
-
-  #header .image.avatar {
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-
-  #nav ul {
-    text-align: center !important;
-  }
-
-  #header .sidebar-socials {
-    justify-content: center !important;
-  }
-
-  .container,
-  #footer .container {
-    width: 100% !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-}
 
 /* ==========================================================
    Bitacora-inspired light colour scheme
@@ -4382,6 +4340,22 @@ button:hover,
     bottom: auto !important;
     left: auto !important;
     z-index: auto !important;
+  }
+
+  #header header,
+  #header #logo,
+  #header .sidebar-about,
+  #nav ul {
+    text-align: center !important;
+  }
+
+  #header .image.avatar {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  #header .sidebar-socials {
+    justify-content: center !important;
   }
 
   #wrapper,
